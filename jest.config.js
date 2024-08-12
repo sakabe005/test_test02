@@ -3,5 +3,5 @@ module.exports = {
     '^.+\\.jsx?$': 'babel-jest',
   },
   testEnvironment: 'node',
-  transformIgnorePatterns: ['<rootDir>/node_modules/']
+  transformIgnorePatterns: ['<rootDir>/node_modules/(?!(your-module-name)/)']
 };
