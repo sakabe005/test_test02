@@ -12,12 +12,15 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
+        node-version: '20.x'
     - name: Clear npm cache
       run: npm cache clean --force
     - name: Install dependencies
       run: |
         npm install
+    - name: Install Jest
+      run: |
+        npm install --save-dev jest
     - name: Install Babel
       run: |
         npm install --save-dev babel-jest @babel/preset-env
