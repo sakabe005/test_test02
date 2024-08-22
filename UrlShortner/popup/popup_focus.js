@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('keydown', handleUrlSelectionKeyDown);
 });
 
-function handleKeyDown(event) {
+export function handleKeyDown(event) {
   if (event.isComposing) return;
 
   if (event.key === 'Enter') {
@@ -20,7 +20,7 @@ function handleKeyDown(event) {
   }
 };
 
-function handleUrlSelectionKeyDown(event) {
+export function handleUrlSelectionKeyDown(event) {
   const selectionDiv = document.getElementById('urlSelection');
   if (selectionDiv.style.display !== 'block') return;
 

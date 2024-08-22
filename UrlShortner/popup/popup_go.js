@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('go').addEventListener('click', handleGoClick);
 });
 
-async function handleGoClick() {
+export async function handleGoClick() {
   const shortUrl = document.getElementById('shortUrl1').value;
   const range = `${defaultSheetName}!A:B`;  // データを取得する範囲
 
